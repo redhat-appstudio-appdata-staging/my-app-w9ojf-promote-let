@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-nsom
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/aronaldson-tenant/my-app/devfile-sample-python-basic-nsom@sha256:fe063b830b7238a85ef92000a3dde9ff2bc044ba4392b0f77b374545b14bca3d
+        name: my-python
+        resources: {}
+status: {}
